@@ -1,0 +1,19 @@
+﻿@model WebApplication4.ViewModels.ClienteProductoViewModel
+
+@{
+    ViewBag.Title = "Listar";
+}
+<br />
+<div class="panel panel-primary">
+    <div class="panel-heading">LISTADO DE CLIENTES</div>
+    <div class="panel-body">
+        @Html.Partial("_Clientes", Model.ListaClientes)
+    </div>
+</div>
+<br />
+<div class="panel panel-primary">
+    <div class="panel-heading">LISTADO DE PRODUCTOS</div>
+    <div class="panel-body">
+        @Html.Partial("_Productos", Model.ListaProductos)
+    </div>
+</div>
